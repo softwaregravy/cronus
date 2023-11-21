@@ -54,6 +54,8 @@ group :development, :test do
 
   # testing
   gem "rspec-rails", '~> 6.0.0'
+  gem "factory_bot_rails"
+  gem "faker"
 
   # formatting 
   gem "standard", require: false
