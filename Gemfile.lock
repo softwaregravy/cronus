@@ -1,3 +1,12 @@
+GIT
+  remote: https://github.com/softwaregravy/annotate_models.git
+  revision: ae0b79c0f816b2433a3f00b9a73b3aea1bd3e84b
+  branch: develop
+  specs:
+    annotate (3.2.0)
+      activerecord (>= 3.2, < 8.0)
+      rake (>= 10.4, < 14.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -299,6 +308,7 @@ PLATFORMS
   arm64-darwin-22
 
 DEPENDENCIES
+  annotate!
   bootsnap
   debug
   erb_lint
