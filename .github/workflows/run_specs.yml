@@ -20,21 +20,19 @@ jobs:
         # image: postgres:15.5
         image: postgres:15.5-alpine
         ports:
-          - "5432:5432"
-#           - 5432:5432
+        #   - "5432:5432"
+          - 5432:5432
         env:
-          POSTGRES_DB: cronus_test
           POSTGRES_USER: postgres
-          POSTGRES_PASSWORD: ""
+          POSTGRES_PASSWORD: password
           POSTGRES_HOST_AUTH_METHOD: trust
         # needed because the postgres container does not provide a healthcheck
         options: --health-cmd pg_isready --health-interval 10s --health-timeout 5s --health-retries 5
 
     env:
       RAILS_ENV: test
-      # DATABASE_URL: "postgres://postgres@localhost:5432/rails_test"
-      POSTGRES_USER: postgres
-      # PG_USER: postgres
+      PG_USER: postgres
+      DATABASE_URL: postgres://postgres:password@localhost:5432/test
 
     steps:
       - name: Checkout code
