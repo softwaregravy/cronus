@@ -1,0 +1,5 @@
+# this doesn't actually work in the script, you need to put this on your commandline
+--secret GITHUB_TOKEN="$(gh auth token)" 
+
+# these work
+--container-architecture linux/amd64 
