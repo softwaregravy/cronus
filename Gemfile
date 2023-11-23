@@ -80,6 +80,7 @@ group :development do
 
   # check for security vulnerabilities
   gem "bundler-audit"
+  gem "brakeman"
 end
 
 group :test do
