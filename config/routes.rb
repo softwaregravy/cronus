@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'main_page/index'
+  devise_for :users
   namespace :public do
     get 'landing_page/index'
   end

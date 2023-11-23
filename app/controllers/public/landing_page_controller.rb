@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module Public
-  class LandingPageController < ApplicationController
+  class LandingPageController < PublicController
     def index; end
   end
 end
