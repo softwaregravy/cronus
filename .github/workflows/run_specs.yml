@@ -40,14 +40,11 @@ jobs:
         with:
           bundler-cache: true
 
-      - name: Precompile assets
-        run: bundle exec rails assets:precompile
-
       - name: Set up database for testing
         run: bundle exec rails db:test:prepare
 
       - name: Run specs
-        run: bundle exec rspec spec
+        run: bundle exec rake spec
 
   lint:
     runs-on: ubuntu-latest
