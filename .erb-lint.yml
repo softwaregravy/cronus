@@ -2,14 +2,7 @@
 EnableDefaultLinters: true
 
 exclude: 
-  - "**/vendor/bundle/**/*"
-  - "**/app/views/action_text/**/*"
-  - "**/app/views/fields/**/*"
-  - "**/app/views/kaminari/*"
   - "**/app/views/devise/**/*"
-  - "**/app/views/payment_methods/**/*"
-  - "**/app/views/shared/_payments_dependencies.html.erb"
-  - "**/app/views/subscriptions/**/*"
 
 
 linters:
@@ -42,4 +35,3 @@ linters:
         Enabled: false
       Rails/LinkToBlank:
         Enabled: false
-
