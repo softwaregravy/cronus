@@ -61,9 +61,9 @@ jobs:
 
       ## Add or replace any other lints here
       - name: Security audit dependencies
-        run: bin/bundler-audit --update
+        run: bundle exec bundle-audit --update
       - name: Security audit application code
-        run: bin/brakeman -q -w2
+        run: bundle exec brakeman -q -w2
       - name: Lint Ruby files
         run: bundle exec standardrb
       - name: Lint ERB files

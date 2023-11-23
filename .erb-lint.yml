@@ -2,6 +2,7 @@
 EnableDefaultLinters: true
 
 exclude: 
+  - "**/vendor/bundle/**/*"
   - "**/app/views/devise/**/*"
 
 
