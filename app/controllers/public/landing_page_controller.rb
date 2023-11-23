@@ -2,6 +2,7 @@
 
 module Public
   class LandingPageController < PublicController
-    def index; end
+    def index
+    end
   end
 end

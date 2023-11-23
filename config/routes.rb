@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
-  get 'main_page/index'
+  get "main_page/index"
   devise_for :users
   namespace :public do
-    get 'landing_page/index'
+    get "landing_page/index"
   end
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

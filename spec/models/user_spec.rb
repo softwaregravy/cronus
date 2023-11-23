@@ -13,10 +13,10 @@
 #  created_at             :datetime         not null
 #  updated_at             :datetime         not null
 #
-require 'rails_helper'
+require "rails_helper"
 
 RSpec.describe User, type: :model do
-  it "has a valid factory" do 
-    expect( create(:user) ).to be_persisted
+  it "has a valid factory" do
+    expect(create(:user)).to be_persisted
   end
 end
