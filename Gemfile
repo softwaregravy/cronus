@@ -77,6 +77,9 @@ group :development do
   #
   # annotating
   gem "annotate"
+
+  # check for security vulnerabilities
+  gem "bundler-audit"
 end
 
 group :test do
