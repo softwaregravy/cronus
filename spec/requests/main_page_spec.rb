@@ -12,6 +12,7 @@ RSpec.describe "MainPages", type: :request do
         expect(response).to have_http_status(:success)
       end
     end
+
     context "when not logged in" do
       it "returns http redirect" do
         get "/main_page/index"

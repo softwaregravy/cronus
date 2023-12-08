@@ -9,7 +9,27 @@ Style/FrozenStringLiteralComment:
   Enabled: false
 Style/Documentation:
   Enabled: false
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+Style/EmptyMethod:
+  EnforcedStyle: expanded
+Style/RedundantInterpolation:
+  Enabled: false
+Style/RedundantFetchBlock:
+  Enabled: false
+Style/IfUnlessModifier:
+  Enabled: false
+Style/SymbolArray:
+  Enabled: false
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+Layout/SpaceInsideHashLiteralBraces:
+  EnforcedStyle: no_space
+Metrics/BlockLength:
+  Enabled: false
 Layout/HashAlignment:
   EnforcedHashRocketStyle: table
+Layout/LineLength:
+  Max: 160
 Rails/RakeEnvironment:
   Enabled: false
