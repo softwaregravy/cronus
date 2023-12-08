@@ -57,16 +57,18 @@ group :development, :test do
   gem "debug", platforms: %i[mri windows]
 
   # testing
-  gem "rspec-rails", "~> 6.0.0"
   gem "factory_bot_rails"
   gem "faker"
+  gem "rspec-rails", "~> 6.0.0"
 
   # formatting
-  gem "standard", require: false
   gem "erb_lint", require: false
-  gem "rubocop-rails", require: false
   gem "rubocop-factory_bot", require: false
+  gem "rubocop-performance", require: false
+  gem "rubocop-rails", require: false
   gem "rubocop-rspec", require: false
+  gem "standard", require: false
+  gem "standard-rails", require: false
 end
 
 group :development do
@@ -83,8 +85,8 @@ group :development do
   gem "annotate"
 
   # check for security vulnerabilities
-  gem "bundler-audit"
   gem "brakeman"
+  gem "bundler-audit"
 end
 
 group :test do

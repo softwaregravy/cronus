@@ -1,35 +1,28 @@
-require: 
-  - rubocop-rails
-  - rubocop-factory_bot
-  - rubocop-rspec
+inherit_mode:
+  merge:
+    - Exclude
 
-Bundler/OrderedGems:
-  Enabled: false
-Style/FrozenStringLiteralComment:
-  Enabled: false
-Style/Documentation:
-  Enabled: false
-Style/StringLiterals:
-  EnforcedStyle: double_quotes
-Style/EmptyMethod:
-  EnforcedStyle: expanded
+require:
+  - rubocop-rails
+  - rubocop-rspec
+  - rubocop-factory_bot
+  - rubocop-performance
+  - standard/cop/block_single_line_braces  
+
+inherit_gem:
+  standard: config/base.yml
+
+inherit_from:
+  - .rubocop-rails.yml
+  - .rubocop-rspec.yml
+  
+# Standardrb overrides
+Layout/HashAlignment:
+  Description: 'in multi-line hash definitions, aligns keys and values in a table-like layout'
+  EnforcedHashRocketStyle: table
+
 Style/RedundantInterpolation:
   Enabled: false
-Style/RedundantFetchBlock:
-  Enabled: false
-Style/IfUnlessModifier:
-  Enabled: false
-Style/SymbolArray:
-  Enabled: false
-Layout/MultilineMethodCallIndentation:
-  EnforcedStyle: indented
-Layout/SpaceInsideHashLiteralBraces:
-  EnforcedStyle: no_space
-Metrics/BlockLength:
-  Enabled: false
-Layout/HashAlignment:
-  EnforcedHashRocketStyle: table
-Layout/LineLength:
-  Max: 160
+
 Rails/RakeEnvironment:
   Enabled: false
